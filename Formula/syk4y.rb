@@ -1,9 +1,9 @@
 class Syk4y < Formula
   desc "Kaggle artifact automation command-line tool"
   homepage "https://github.com/TaiDuc1001/syk4y-apt"
-  url "https://github.com/TaiDuc1001/syk4y-apt/archive/6e1128e293a6c557bfde08530c8482097c3eb41f.tar.gz"
-  version "0.0.5"
-  sha256 "0e9e045c284298a4bf0c515d2dac4aa13eb0909aef1f4a401365dcbd47828509"
+  url "https://github.com/TaiDuc1001/syk4y-apt/archive/854d37337ef1f6c8b570af6fb483b24c3125d268.tar.gz"
+  version "0.0.6"
+  sha256 "5842d128db7e1b11df804ad0546611662b2b37aee8f6fb2b8b4c1de120f4b9af"
 
   depends_on "bash"
 
