@@ -1,14 +1,14 @@
 class Syk4y < Formula
   desc "Kaggle artifact automation command-line tool"
   homepage "https://github.com/TaiDuc1001/syk4y-apt"
-  url "https://github.com/TaiDuc1001/syk4y-apt/archive/969aebf0a6d821e65bc64a9e3c4c5f430b7ca23a.tar.gz"
-  version "0.0.12"
-  sha256 "f5227008df5e54a1ec40267ae65e4e7036117824466dc5e1d0f6049466e93e43"
+  url "https://github.com/TaiDuc1001/syk4y-apt/archive/2343c35e8c4dfb2c2fb073e3414414cd21ac1123.tar.gz"
+  version "0.0.13"
+  sha256 "6545388137563c061af208dac12989f403aa95009199761aabb8c08b885f1b16"
 
   depends_on "bash"
 
   def install
-    libexec.install "syk4y", "syk4y-init", "syk4y-gen", "syk4y-kaggle", "syk4y-doctor"
+    libexec.install "syk4y", "syk4y-init", "syk4y-gen", "syk4y-kaggle", "syk4y-doctor", "syk4y-migrate-layout", "syk4y-update"
     libexec.install "syk4y-lib", "syk4y-cli-lib", "templates"
 
     command_targets = {
@@ -17,6 +17,8 @@ class Syk4y < Formula
       "syk4y-gen" => "syk4y-gen",
       "syk4y-kaggle" => "syk4y-kaggle",
       "syk4y-doctor" => "syk4y-doctor",
+      "syk4y-migrate-layout" => "syk4y-migrate-layout",
+      "syk4y-update" => "syk4y-update",
       "make-gen-full-repo.sh" => "syk4y-gen",
     }
 
